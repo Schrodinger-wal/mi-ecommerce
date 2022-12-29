@@ -16,7 +16,42 @@ body {
   font-family: "Inter", Arial, sans-serif;
 }
 
-.navbar-logo {
-  width: 100px;
-  height: 100px;
+.header {
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  height: 50px;
+  background-color: #c63637;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.navbar__logo {
+  width: 50px;
+  height: 50px;
+}
+.navbar__menu-btn {
+  left: 1;
+  top: 1;
+}
+.navbar__nav-links-container {
+  list-style: none;
+  position: absolute;
+  top: 50px;
+  background-color: #222;
+  padding: 0.75rem;
+  width: 100%;
+}
+.navbar__nav-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid white;
+}
+.navbar__nav-item:not(:last-child) {
+  border-bottom: 1px solid gray;
+}
+.navbar__nav-link {
+  color: white;
 }/*# sourceMappingURL=main.css.map */
