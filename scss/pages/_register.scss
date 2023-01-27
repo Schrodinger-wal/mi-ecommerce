@@ -1,25 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Roboto&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html {
+.body__register {
     font-size: 16px;
     background: rgb(10,16,37);
-background: linear-gradient(90deg, rgba(10,16,37,1) 0%, rgba(25,55,142,1) 100%);
-}
-
-body{
-    font-family: "Roboto";
+background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(134, 6, 6) 100%);
+font-family: "Roboto";
     font-size: 1rem;
 }
 
 /* ==========================================Header======================================== */
 
-header {
+.header {
     background-color:black;
     width: auto;
     color: #fff;
@@ -37,7 +28,7 @@ header {
 
 
 
-.title{
+.title__formulary{
     color: white;
     text-align: center;
     padding: 20px;
@@ -47,12 +38,12 @@ header {
     font-weight: 100;
 }
 
-.section {
+.section__formulary {
     display: flex;
     justify-content: center;
 }
 
-.form-register {
+.form__register {
     width: 350px;
     background: #222222;
     padding: 30px;
@@ -61,7 +52,7 @@ header {
     box-shadow: 0px 5px 20px 7px #000;
 }
 
-div {
+.div-input__section {
     width: auto;
     padding: 15px 0px;
     margin: auto;
@@ -69,7 +60,7 @@ div {
 }
 
 
-input, textarea, select {
+.input-formulary, .lista-paises {
 	padding: 10px;
 	border: 1px solid rgb(6, 6, 6);
 	border-radius: 5px;
@@ -105,7 +96,7 @@ input, textarea, select {
 
 /* =====================================Fin del formulario============================== */
 
-footer {
+.footer-formulary {
     background-color: black;
     color: white;
     width: auto;

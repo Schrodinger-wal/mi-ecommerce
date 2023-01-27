@@ -5,51 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de usuario</title>
-    <link rel="stylesheet" href="/scss/pages/_register.scss">
-
+    <link rel="stylesheet" href="/css/main.css">
 </head>
-<body>
-    <header class="header">
+
+
+<body class="body__register">
+    <header class="header__formulary">
         
         <img class="header__image" src="/assest/img/logo.png" alt="logo">
     </header>
         
             <main class="main-formulary">
-            <h1 class="title"> REGISTRO DE USUARIO </h1>
+            <h1 class="title__formulary"> REGISTRO DE USUARIO </h1>
 
 <!-- =================================Inicio del formulario ============================= -->
 
-                <section class="section">
-                    <form class="form-register">
+                <section class="section__formulary">
+                    <form class="form__register">
                         <!-- ingresos de datos -->
-                        <div>
-                            <label for="idInputName">Nombre Completo</label><br>
-                            <input type="text" name="fullName" id="idInputName" required minlength="8" maxlength="40" size="50" autofocus autocomplete="on" placeholder="John Doe">
+                        <div class="div-input__section">
+                            <label class="label-formulary" for="idInputName">Nombre Completo</label><br>
+                            <input class= "input-formulary "type="text" name="fullName" id="idInputName" required minlength="8" maxlength="40" size="50" autofocus autocomplete="on" placeholder="John Doe">
                         </div>
                     
-                        <div>
-                            <label for="emailInput">E-mail</label> <br>
-                            <input type="email" class="email-field" name="email" id="emailInput" placeholder="example@email.com" required minlength="8" maxlength="45" pattern="[a-z0-      9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        <div class="div-input__section">
+                            <label class="label-formulary" for="emailInput">E-mail</label> <br>
+                            <input class= "input-formulary "type="email" class="email-field" name="email" id="emailInput" placeholder="example@email.com" required minlength="8" maxlength="45" pattern="[a-z0-      9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                         </div>
-                        <div>
-                            <label for="passwordInput">Contraseña</label><br>
-                            <input type="text" pattern=""^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required placeholder="**********" type="password">
+                        <div class="div-input__section">
+                            <label class="label-formulary" for="passwordInput">Contraseña</label><br>
+                            <input class= "input-formulary "type="text" pattern=""^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required placeholder="**********" type="password">
                         </div>
-                        <div>
-                            <label for="passwordInput">Repetir Contraseña</label> <br>
-                            <input type="text" pattern=""^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required placeholder="**********" type="password">
+                        <div class="div-input__section">
+                            <label class="label-formulary" for="passwordInput">Repetir Contraseña</label> <br>
+                            <input class= "input-formulary "type="text" pattern=""^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required placeholder="**********" type="password">
                         </div>
-                        <div>
-                            <label for="ageInput">Edad</label> <br>
-                            <input type="number" name="age" id="ageInput" required min="12" max="130" step="5" placeholder="19">
+                        <div class="div-input__section">
+                            <label class="label-formulary" for="ageInput">Edad</label> <br>
+                            <input class= "input-formulary "type="number" name="age" id="ageInput" required min="12" max="130" step="5" placeholder="19">
                         </div>
-                        <div>
-                            <label for="bornDateInput">Fecha Nacimiento</label><br>
-                            <input type="date" name="bornDate" id="bornDateInput">
+                        <div class="div-input__section">
+                            <label class="label-formulary" for="bornDateInput">Fecha Nacimiento</label><br>
+                            <input class= "input-formulary "type="date" name="bornDate" id="bornDateInput">
                         </div>
-                        <div>
-                            <label for="country">Pais de Nacimiento</label><br>
-                            <select name="country" id="country" required>
+                        <div class="div-input__section">
+                            <label class="label-formulary" for="country">Pais de Nacimiento</label><br>
+                            <select class="lista-paises" name="country" id="country" required>
                                 <option value="--">--</option>
                                 <option value="AF">Afghanistan</option>
                                 <option value="AX">Åland Islands</option>
@@ -304,18 +305,18 @@
                     
                         </div>
                     
-                            <label class="formulary-container__genre" for="">Sexo</label>
+                            <label class="label-formulary" class="formulary-container__genre" for="">Sexo</label>
                             
                             <div class="formulary__genre-div">
-                            <input type="radio" name="genre" value="female"> Mujer 
-                            <input type="radio" name="genre" value="male"> Hombre 
-                            <input type="radio" name="genre" value="other"> Otro 
+                            <input class= "input-formulary "type="radio" name="genre" value="female"> Mujer 
+                            <input class= "input-formulary "type="radio" name="genre" value="male"> Hombre 
+                            <input class= "input-formulary "type="radio" name="genre" value="other"> Otro 
                             </div>
 
                             <div class="formulary-conditions__container">
-                                <input type="checkbox" name="checkbox"  id="terminos"
+                                <input class= "input-formulary "type="checkbox" name="checkbox"  id="terminos"
                                 class="formulary-conditions__input" required>
-                                <label class="formulary-conditions__label" for="terminos">
+                                <label class="label-formulary" class="formulary-conditions__label" for="terminos">
                                 Acepto los terminos y condiciones
                                 </label>
                             </div>
@@ -328,7 +329,7 @@
 
 <!-- ==============================================Fin del formulario========================================================== -->
 
-            <footer>
+            <footer class="footer-formulary">
                 <p>Lorem ipsum dolor sit amet.</p>
             </footer>
 </body>

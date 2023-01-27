@@ -1,0 +1,57 @@
+
+
+.cards-container {
+    width: auto;
+	padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card {
+    margin: 1rem;
+    border: black 2px solid;
+    display: inline-block;
+    flex: 0 0 20%;
+    padding: 1rem;
+    position: relative;
+    width: 33%;
+
+    &__header {
+        height: 330px;
+        background-color: orange;
+    }
+    &__img {
+        height: 350px;
+        
+    }
+    &__body {
+        padding: 1rem;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 1.5rem;
+        border-bottom: 2px solid orangered;
+    }
+    &__description {
+        padding: 1rem 0;
+    }
+    &__description {
+        padding: 1rem 0;
+    }
+    &__price {
+
+    }
+    &__footer {
+
+    }
+    &__date {
+        
+    }
+    &__btn-container {
+
+    }
+    &__btn {
+
+    }
+}

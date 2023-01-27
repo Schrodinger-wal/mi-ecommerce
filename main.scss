@@ -1,8 +1,12 @@
-
 @import "scss/base/reset";
 
 @import "scss/abstracts/variables";
 
 @import "scss/base/typography";
 
-@import "scss/layout/header"
+@import "scss/layout/header";
+
+@import "scss/components/card";
+
+@import "scss/pages/register";
+
