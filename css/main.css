@@ -62,8 +62,9 @@ body {
   width: auto;
   padding: 40px 0;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
 }
 
 .card {
@@ -73,14 +74,15 @@ body {
   flex: 0 0 20%;
   padding: 1rem;
   position: relative;
-  width: 33%;
+  width: 300px;
+  height: 600;
 }
 .card__header {
-  height: 330px;
-  background-color: orange;
+  height: 280px;
+  background-color: rgb(250, 0, 0);
 }
 .card__img {
-  height: 350px;
+  height: 320px;
 }
 .card__body {
   padding: 1rem;
@@ -95,6 +97,28 @@ body {
 }
 .card__description {
   padding: 1rem 0;
+}
+@media only screen and (max-width: 600px) {
+  .card {
+    height: 550px;
+    width: 300px;
+  }
+  .card__header {
+    height: 250px;
+    width: 250px;
+    background-color: orange;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .card {
+    height: 550px;
+    width: 400px;
+  }
+  .card__header {
+    height: 300px;
+    width: 300px;
+    background-color: orange;
+  }
 }
 .body__register {
   font-size: 16px;
