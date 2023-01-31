@@ -6,25 +6,37 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center; //Es para acomodar las cards en medio del container
-    align-content: space-around;
+    z-index: 2;
 }
 
 .card {
     margin: 1rem;
-    border: black 2px solid;
+/*     border: black 2px solid; */
     display: inline-block;
     flex: 0 0 20%;
     padding: 1rem;
-    position: relative;
     width: 300px;
     height: 600;
+    z-index: 2;
+    border-radius: 3%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+
+.card:hover {
+    box-shadow: 5px 2px 20px rgba(0,0,0,0.5);
+    transform: translateY(-3%);
+}
+
 
     &__header {
-        height: 280px;
+        height: 300px;
+        width: 280px;
         background-color: rgb(250, 0, 0);
     }
     &__img {
-        height: 320px;
+        height: auto;
+        width: 300px;
         
     }
     &__body {
@@ -34,27 +46,34 @@
         font-weight: 500;
         font-size: 1.5rem;
         border-bottom: 2px solid orangered;
+        text-align: center;
     }
     &__description {
         padding: 1rem 0;
-    }
-    &__description {
-        padding: 1rem 0;
+        line-height: 1.25;
     }
     &__price {
-
+        text-align: center;
+        font-size: large;
     }
     &__footer {
-
+        display: flex;
+        justify-content: space-between;
     }
     &__date {
-        
-    }
+        /* justify-content: left; */
+    
     &__btn-container {
+        display: inline-block;
 
     }
     &__btn {
-
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        color: $color-bg-secondary;
+/*         justify-content: right; */
     }
 }
 
@@ -68,16 +87,23 @@
         width: 250px;
         background-color: orange;
     }
+    &__img {
+        width: 100px;
+    }
 }
 
-@media only screen and (max-width: 1100px) { 
+@media only screen and (max-width: 1550px) { 
     .card {
-        height: 550px;
+        height: 570px;
         width: 400px;
         }
         .card__header {
             height: 300px;
             width: 300px;
-            background-color: orange;
+            background-color: rgb(56, 49, 37);
+        }
+        .card__img {
+            width: 100px;
         }
     }
+}
