@@ -18,6 +18,10 @@ body {
   background-image: url(/Assets/background-title-alt.png);
 }
 
+::-webkit-placeholder {
+  color: lightgray;
+}
+
 /* ===============================     EMPIEZA HEADER    ========================================== */
 .header__index {
   width: 100%;
@@ -493,7 +497,7 @@ body {
 }
 
 ::-webkit-input-placeholder {
-  color: #c21531;
+  color: lightgray;
 }
 
 .formulary__genre-div {
