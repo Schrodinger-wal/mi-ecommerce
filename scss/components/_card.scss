@@ -5,11 +5,17 @@
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
     gap: 30px;
 /*     display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
 }
 
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+    }
+    
 
 .card {
     /*border: black 2px solid;
@@ -23,11 +29,6 @@
 	cursor: default;
     overflow: hidden;
 
-    :hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-	transform: translateY(-3%);
-    }
-    
     &__header {
         height: 300px;
         width: 200px;
@@ -69,8 +70,6 @@
         color: red;
 /*         justify-content: right; */
     }
-
-
 
 
 @media only screen and (max-width: 600px) { 
