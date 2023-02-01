@@ -90,6 +90,22 @@
         }
     }
 
+    .navbar__nav-item:hover{
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+        transform: translateY(-1%);
+        transition: all 800ms ease-out;
+        -webkit-transform: translateY(-1%);
+        -moz-transform: translateY(-1%);
+        -ms-transform: translateY(-1%);
+        -o-transform: translateY(-1%);
+        -webkit-transition: all 800ms ease-out;
+        -moz-transition: all 800ms ease-out;
+        -ms-transition: all 800ms ease-out;
+        -o-transition: all 800ms ease-out;
+}
+
+
+
     &__nav-links-container {
         list-style: none;
         position: absolute;
@@ -107,6 +123,7 @@
     }
     &__nav-item {
         padding: 1.25rem 1rem;
+        transition: all .2s ease-out;
         
         &:not(:last-child) {
             border-bottom: 2px solid rgb(156, 156, 156);
@@ -116,8 +133,9 @@
     &__nav-link {
         color: $color-dark-gray;
     }
-
 }
+
+
 
 .user-navbar {
     

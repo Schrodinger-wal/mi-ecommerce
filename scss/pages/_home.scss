@@ -19,6 +19,7 @@
 }
     &__header {
         text-align: center;
+        margin-top: 10px;
 
     }
     &__title {
@@ -29,6 +30,16 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     } */
+}
+
+.section-cards__header:hover {
+    filter: blur(2px);
+    transition: all 1s ease-out;
+    -webkit-filter: blur(2px);
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
 }
 
 

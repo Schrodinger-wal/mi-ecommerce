@@ -15,6 +15,9 @@
     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
     transform: translateY(-3%);
     }
+.card__header:hover {
+    filter: grayscale(80%);
+    }
     
 
 .card {
@@ -31,7 +34,12 @@
     &__header {
         height: 300px;
         width: 200px;
-    }
+        transition: all 400ms ease-out    ;
+        -webkit-transition: all 400ms ease-out;
+        -moz-transition: all 400ms ease-out;
+        -ms-transition: all 400ms ease-out;
+        -o-transition: all 400ms ease-out;
+}
     &__img {
         width: 200px !important;
     }
