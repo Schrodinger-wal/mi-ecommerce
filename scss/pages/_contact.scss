@@ -1,0 +1,39 @@
+/* =============================== Contact ========================================= */
+
+
+.contact-form__body {
+    background: red;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    padding: 0 1.5em;
+}
+
+.contact-form__container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.logo span {
+    color: $color-dark-gray;
+}
+
+
+.contact-form__map {
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+/* =============================== Fin Contact ========================================= */

@@ -1,43 +1,39 @@
+/* =========================================CARDS================================================================ */
 
-
-.cards-container {
+.section-cards .cards-container {
     width: auto;
-	padding: 40px 0;
+    justify-content: center;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center; //Es para acomodar las cards en medio del container
-    z-index: 2;
+    flex-wrap: wrap;
+    gap: 30px;
+/*     display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
 }
+
 
 .card {
-    margin: 1rem;
-/*     border: black 2px solid; */
-    display: inline-block;
-    flex: 0 0 20%;
+    /*border: black 2px solid;
+    */display: inline-block;
     padding: 1rem;
-    width: 300px;
-    height: 600;
-    z-index: 2;
     border-radius: 3%;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    cursor: default;
-    transition: all 400ms ease;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    background-color: white;
+    width: 330px;
+    transition: all 400ms ease-out;
+	cursor: default;
+    overflow: hidden;
 
-.card:hover {
-    box-shadow: 5px 2px 20px rgba(0,0,0,0.5);
-    transform: translateY(-3%);
-}
-
-
+    :hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+    }
+    
     &__header {
         height: 300px;
-        width: 280px;
-        background-color: rgb(250, 0, 0);
+        width: 200px;
     }
     &__img {
-        height: auto;
-        width: 300px;
-        
+        width: 200px !important;
     }
     &__body {
         padding: 1rem;
@@ -65,17 +61,17 @@
     
     &__btn-container {
         display: inline-block;
-
+    }
     }
     &__btn {
         text-decoration: none;
         display: inline-block;
-        padding: 10px;
-        margin-top: 10px;
-        color: $color-bg-secondary;
+        color: red;
 /*         justify-content: right; */
     }
-}
+
+
+
 
 @media only screen and (max-width: 600px) { 
     .card {
@@ -85,7 +81,6 @@
     .card__header {
         height: 250px;
         width: 250px;
-        background-color: orange;
     }
     &__img {
         width: 100px;
@@ -107,3 +102,5 @@
         }
     }
 }
+
+/* =========================================FIN CARDS================================================================ */

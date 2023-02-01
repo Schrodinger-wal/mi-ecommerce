@@ -1,10 +1,19 @@
-/* !!! */
 .footer {
     display: flex;
     flex-direction: column;
-    background-color: rgb(151, 151, 151);
+    background-color: $color-dark-gray;
+    justify-content: space-around;
     &__column {
-        padding: 1rem 1.5rem;
+        padding: 1rem;
+        justify-content: center;
+        color: aliceblue;
+    }
+    &__column-media {
+        padding: 1rem 3rem;
+    }
+    &__column-bushido {
+        padding: 1rem;
+        justify-content: center;
     }
 
     &__contact-item {
@@ -14,7 +23,7 @@
     }
 
     &__contact-link {
-        color: rgb(255, 255, 255);
+        color: white;
         padding: .25rem;
         display: flex;
         align-items: center;
@@ -26,7 +35,6 @@
 
     &__contact-icon {
         font-size: 1.75rem;
-        text-align: left;
         &--facebook {
             color: #38529a;
         }
@@ -38,9 +46,33 @@
         }
     }
 }
+.whatsapp-container {
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 70px;
+    color: $color-bg-primary;
+    z-index: 100;
+    &__link {
+        justify-content: right;
+    }
+}
+__link {
+    justify-content: right;
+}
 
-@media screen and(min-width: 600px) {
+@media screen and(min-width: 650px) {
     .footer {
         flex-direction: row;
     }
+}
+
+@media screen and (max-width: 649px) {
+    .footer {
+        display: flex;
+        align-items: center;
+}
 }

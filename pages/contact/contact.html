@@ -5,11 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-</head>
-<body>
-    <h1>Contact</h1>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- ================ Modelo a seguir en discord ===================== -->
+</head>
+
+
+<body class="contact-form__body">
+
+    <header class="header__index">
+        <nav class="navbar">
+                <a  href="/index.html" class="navbar__nav-link" >
+                    <img class="navbar__logo" src="/Assets/bushido.png" alt="Logo bushido" >
+                </a>
+                <h1 style="margin-right: 30px ;">BUSHIDO</h1>
+    
+                <div class="user-navbar">
+                    <button class="product-search__btn">
+                        <div class="buscar">
+                            <input type="text" placeholder="Buscar" required />
+                            <div class="navbar-btn">
+                            <i class="fas fa-search icon"></i>
+                    </button>
+                    <div class="user-navbar__cart-icon-container">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <a href="/pages/register/register.html">
+                    <div class="user-navbar__user-avatar-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png" class="user-navbar__user-avatar" alt="Imagen de usuario">
+                    </div>
+                    </a>
+                    
+            <!-- TODO: avatar de la persona logueada o nombre -->
+                </div>
+    
+                
+                <input type="checkbox" class="navbar__menu-btn" id="menu-btn">
+                <label for="menu-btn"  class="navbar__menu-label">
+                    <span class="navbar__menu-icon"></span>
+                </label>
+                
+    
+    
+    
+                <ul class="navbar__nav-links-container">
+                    <li class="navbar__nav-item">
+                        <a href="/index.html" class="navbar__nav-link">Inicio</a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="/pages/contact/contact.html" class="navbar__nav-link">Contacto</a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Nosotros</a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="/pages/register/register.html" class="navbar__nav-link">Registrarse</a>
+                    </li>
+                </ul>
+    
+        </nav>
+    </header>
+
+    <!-- ========================================== INICIO CONTACT ======================================== -->
+
+    <div class="contact-form__container">
+        <h2 class="logo">Contacto <span>Us</span></h2>
+        
+        <div class="contact-form__wrapper">
+            <div class="contact-form__div">
+                <form action="">
+                    <p>
+                        <label class="contact-form__label">Tu nombre completo</label>
+                        <input class="contact-form__input" type="text" name="fullname" id="fullname">
+                    </p>
+                    <p>
+                        <label class="contact-form__label" for="">Direccion Email</label>
+                        <input class="contact-form__input"  type="email" name="email" id="">
+                    </p>
+                    <p>
+                        <label class="contact-form__label" for="">Tu consulta</label>
+                        <textarea name="mensaje" id="" cols="30" rows="5"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Send
+                        </button>
+                    </p>
+                </form>
+            </div> 
+            <h4>Visitanos!</h4>
+            <iframe class="contact-form__map" " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5518.777529898712!2d-58.55651410850061!3d-34.66771316049732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62acad68b41%3A0x56be511fb28e0b95!2sBer%C3%B3n%20de%20Astrada%202758%2C%20B1704DHZ%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1675210714408!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </div>
+
+    <!-- ========================================== FIN CONTACT ======================================== -->
+
+
 
 </body>
 </html>

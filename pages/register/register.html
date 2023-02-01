@@ -6,17 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de usuario</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
+<body class="body__formulary">
 
-<body class="body__register">
-    <header class="header__formulary">
-        
-        <img class="header__image" src="/assest/img/logo.png" alt="logo">
-    </header>
-        
-            <main class="main-formulary">
-            <h1 class="title__formulary"> REGISTRO DE USUARIO </h1>
+<header class="header__index">
+    <nav class="navbar">
+            <a  href="/index.html" class="navbar__nav-link" >
+                <img class="navbar__logo" src="/Assets/bushido.png" alt="Logo bushido" >
+            </a>
+            <h1 style="margin-right: 30px ;">BUSHIDO</h1>
+
+            <div class="user-navbar">
+                <button class="product-search__btn">
+                    <div class="buscar">
+                        <input type="text" placeholder="Buscar" required />
+                        <div class="navbar-btn">
+                        <i class="fas fa-search icon"></i>
+                </button>
+                <div class="user-navbar__cart-icon-container">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <a href="/pages/register/register.html">
+                <div class="user-navbar__user-avatar-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png" class="user-navbar__user-avatar" alt="Imagen de usuario">
+                </div>
+                </a>
+                
+        <!-- TODO: avatar de la persona logueada o nombre -->
+            </div>
+
+            
+            <input type="checkbox" class="navbar__menu-btn" id="menu-btn">
+            <label for="menu-btn"  class="navbar__menu-label">
+                <span class="navbar__menu-icon"></span>
+            </label>
+            
+
+
+
+            <ul class="navbar__nav-links-container">
+                <li class="navbar__nav-item">
+                    <a href="/index.html" class="navbar__nav-link">Inicio</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/contact/contact.html" class="navbar__nav-link">Contacto</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Nosotros</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/register/register.html" class="navbar__nav-link">Registrarse</a>
+                </li>
+            </ul>
+
+    </nav>
+</header>
 
 <!-- =================================Inicio del formulario ============================= -->
 
@@ -329,9 +375,63 @@
 
 <!-- ==============================================Fin del formulario========================================================== -->
 
-            <footer class="footer-formulary">
-                <p>Lorem ipsum dolor sit amet.</p>
-            </footer>
+<div class="whatsapp-container">
+    <a href="" class="whatsapp-container__link">
+        <img src="/Assets/Icons/whatsapp-icon.png" alt="Whatsapp contact link" class="whatsapp-container__img" style="width: 50px;">
+    </a>
+</div>
+<footer class="footer">
+    <div class="footer__column-media">
+        <ul class="footer__contact-container">
+            <li class="footer__contact-item"> 
+                <a href="#" class="footer__contact-link">
+                    <i class="fa-brands fa-facebook footer__contact-icon--facebook"></i>
+                    <hr>Facebook
+                </a>
+            </li>
+            <li class="footer__contact-item">
+                <a href="https://www.instagram.com/vvw.b/" class="footer__contact-link">
+                    <i class="fa-brands fa-instagram footer__contact-icon--instagram"></i>
+                    <hr>Instagram
+                </a>
+            </li>
+            <li class="footer__contact-item">
+                <a href="www.linkedin.com/in/walter-mayer" class="footer__contact-link">
+                    <i class="fa-brands fa-linkedin footer__contact-icon--linkedin"></i>
+                    <hr>Linkedin
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__column">
+        <!-- <img src="/Assets/bushido.png" alt="Company Logo" class="footer__logo" width="50" style=""> -->
+        <h2 style="text-align: center;" class="footer__company-name">BUSHIDO</h2>
+        <p class="footer__copyrigth">Todos los derechos reservados a Bushido®</p>
+    </div>
+    <div class="footer__column">
+        <ul class="footer__contact-container">
+            <li class="footer__contact-item">
+                <a href="#" class="footer__contact-link">
+                    <i class="fa-solid fa-square-phone-flip footer__contact-icon"></i>
+                    <p>(+54)011-4406-7352 </p>
+                </a>
+            </li>
+            <li class="footer__contact-item">
+                <a href="#" class="footer__contact-link">
+                    <i class="fa-solid fa-location-dot footer__contact-icon"></i>
+                    <p>Ramos Mejia (Bs.As)</p>
+                </a>
+            </li>
+            <li class="footer__contact-item">
+                <a href="#" class="footer__contact-link">
+                    <i class="fa-solid fa-envelope footer__contact-icon"></i>
+                    <p style="font-size: small;" >Waltermayer@outlook.es</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
 </body>
 </html>
 
