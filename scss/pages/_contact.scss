@@ -1,34 +1,160 @@
 /* =============================== Contact ========================================= */
 
-
-.contact-form__body {
-    background: red;
-    color: rgb(0, 0, 0);
-    line-height: 1.6;
-    padding: 0 1.5em;
-}
-
-.contact-form__container {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5rem;
-}
-
-.logo {
+.contact-form__title {
     text-align: center;
-    font-size: 3rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 1rem;
+    color: $color-bg-secondary;
 }
 
-.logo span {
-    color: $color-dark-gray;
+.contact-form__section .contact-form__container {
+    width: auto;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 103px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
 }
 
 
-.contact-form__map {
-    width: 200px;
+
+.contact-form {
+    &__container {
+    width: 1000px;
+    background-image: url(/Assets/African-titulo.png);
+    padding: 30px;
+    margin-top: 20px;
+    color: white;
+    font-size: larger;
+    box-shadow: 0px 5px 20px 7px #000;
+    margin-bottom: 40px;}
+    &__map {
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 3%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    }
+    &__label, &__input, &__textarea {
+        padding: 10px;
+        border-radius: 5px;
+        outline: none;
+        width: 95%;
+        margin-bottom: 20px;
+    }
 }
 
+@media only screen and (max-width: 768px) {
+    .contact-form__section .contact-form__container {
+        flex-direction: column;
+        width: auto;
+    }
+    .contact-form {
+        &__map {
+            width: auto;
+        }
+    }
+    }
+/* 
+.contact{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-bg-primary;
+}
+
+.contact__image-wrapper{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__image{
+    width: 100%;
+}
+
+.contact__right-side{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding:0 7.3% 0 4.7%;
+    width: 50%;
+}
+
+.contact__title{
+    font-size: 70px;
+    font-weight: 200;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+
+.contact__form-wrapper, .contact__input-line{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact__input-line{
+    margin-bottom: 45px;
+}
+
+.contact__label{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact__input{
+    height: 30px;
+    outline: none;
+    padding: 5px 0;
+    border-bottom: 2px solid #121212;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    color: #121212;
+    background-color: transparent;
+}
+
+.contact__input--textarea{
+    height: 100px;
+    outline: none;
+    padding: 5px 0;
+    border-bottom: 2px solid #121212;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    color: #121212;
+    resize: none;
+    background-color: transparent;
+}
+
+.contact__submit-button{
+    padding: 18px 55px;
+    background-color: #121212;
+    border-radius: 50px;
+    color: #f2f2f2;
+    font-weight: 600;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact__submit-button:hover{
+    background-color: #2e2e2e;
+}
+
+ */
 
 
 
@@ -36,4 +162,9 @@
 
 
 
-/* =============================== Fin Contact ========================================= */
+
+
+
+
+
+/* =============================== Fin Contact ========================================= */ 
