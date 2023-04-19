@@ -68,6 +68,7 @@ function checkIfUserExist(users) {
         password: el.password.value,
         email:el.email.vaslue,
         gender:el.gender.value,
+        role: 'user-role',
     }
 
     //e- insertar en mi array de usuarios el nuevo user (lista de usuarios)
