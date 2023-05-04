@@ -69,15 +69,16 @@
     transform: translateY(-3%);
     }
 
-@media screen and(min-width: 650px) {
+/* @media screen and(min-width: 649px) {
     .footer {
         flex-direction: row;
     }
 }
-
-@media screen and (max-width: 649px) {
+ */
+@media screen and (max-width: 650px) {
     .footer {
         display: flex;
         align-items: center;
 }
 }
+

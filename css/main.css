@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -13,13 +13,132 @@ a {
   display: inline-block;
 }
 
-body {
-  font-family: Helvetica, "Roboto", Arial, sans-serif;
-  background-image: url(/Assets/background-title-alt.png);
+/* =========================================CARDS================================================================ */
+.section-cards .cards-container {
+  width: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 30px;
+  /*     display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
 }
 
-::-webkit-placeholder {
-  color: lightgray;
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.card__header:hover {
+  filter: grayscale(80%);
+}
+
+.card {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 3%;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  width: 330px;
+  transition: all 400ms ease-out;
+  cursor: default;
+  overflow: hidden;
+}
+.card__header {
+  height: 300px;
+  width: 200px;
+  transition: all 400ms ease-out;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+}
+.card__img {
+  width: 200px !important;
+}
+.card__body {
+  padding: 1rem;
+}
+.card__title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  border-bottom: 2px solid orangered;
+  text-align: center;
+}
+.card__description {
+  padding: 1rem 0;
+  line-height: 1.25;
+}
+.card__price {
+  text-align: center;
+  font-size: large;
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.card__date {
+  /* justify-content: left; */
+}
+.card__date__btn-container {
+  display: inline-block;
+}
+.card__btn {
+  text-decoration: none;
+  display: inline-block;
+  color: red;
+  /*         justify-content: right; */
+}
+@media only screen and (max-width: 600px) {
+  .card .card {
+    height: 550px;
+    width: 300px;
+  }
+  .card .card__header {
+    height: 250px;
+    width: 250px;
+  }
+  .card__img {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 1550px) {
+  .card .card {
+    height: 570px;
+    width: 400px;
+  }
+  .card .card__header {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(56, 49, 37);
+  }
+  .card .card__img {
+    width: 100px;
+  }
+}
+
+/* =========================================FIN CARDS================================================================ */
+.alert-dialog {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  background-color: rebeccapurple;
+  padding: 2rem;
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  transition: display 0.5s ease-in-out;
+  -webkit-transition: display 0.5s ease-in-out;
+  -moz-transition: display 0.5s ease-in-out;
+  -ms-transition: display 0.5s ease-in-out;
+  -o-transition: display 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 /* ===============================     EMPIEZA HEADER    ========================================== */
@@ -215,164 +334,6 @@ body {
     display: none;
   }
 }
-/* =========================================CARDS================================================================ */
-.section-cards .cards-container {
-  width: auto;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  gap: 30px;
-  /*     display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
-}
-
-.card:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-}
-
-.card__header:hover {
-  filter: grayscale(80%);
-}
-
-.card {
-  display: inline-block;
-  padding: 1rem;
-  border-radius: 3%;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-  background-color: white;
-  width: 330px;
-  transition: all 400ms ease-out;
-  cursor: default;
-  overflow: hidden;
-}
-.card__header {
-  height: 300px;
-  width: 200px;
-  transition: all 400ms ease-out;
-  -webkit-transition: all 400ms ease-out;
-  -moz-transition: all 400ms ease-out;
-  -ms-transition: all 400ms ease-out;
-  -o-transition: all 400ms ease-out;
-}
-.card__img {
-  width: 200px !important;
-}
-.card__body {
-  padding: 1rem;
-}
-.card__title {
-  font-weight: 500;
-  font-size: 1.5rem;
-  border-bottom: 2px solid orangered;
-  text-align: center;
-}
-.card__description {
-  padding: 1rem 0;
-  line-height: 1.25;
-}
-.card__price {
-  text-align: center;
-  font-size: large;
-}
-.card__footer {
-  display: flex;
-  justify-content: space-between;
-}
-.card__date {
-  /* justify-content: left; */
-}
-.card__date__btn-container {
-  display: inline-block;
-}
-.card__btn {
-  text-decoration: none;
-  display: inline-block;
-  color: red;
-  /*         justify-content: right; */
-}
-@media only screen and (max-width: 600px) {
-  .card .card {
-    height: 550px;
-    width: 300px;
-  }
-  .card .card__header {
-    height: 250px;
-    width: 250px;
-  }
-  .card__img {
-    width: 100px;
-  }
-}
-@media only screen and (max-width: 1550px) {
-  .card .card {
-    height: 570px;
-    width: 400px;
-  }
-  .card .card__header {
-    height: 300px;
-    width: 300px;
-    background-color: rgb(56, 49, 37);
-  }
-  .card .card__img {
-    width: 100px;
-  }
-}
-
-/* =========================================FIN CARDS================================================================ */
-/* =============================== Contact ========================================= */
-.contact-form__title {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2rem;
-  margin: 1rem;
-  color: #c21531;
-}
-
-.contact-form__section .contact-form__container {
-  width: auto;
-  justify-content: center;
-  display: flex;
-  margin-bottom: 103px;
-  gap: 30px;
-  display: flex;
-  align-items: center;
-}
-
-.contact-form__container {
-  width: 1000px;
-  background-image: url(/Assets/African-titulo.png);
-  padding: 30px;
-  margin-top: 20px;
-  color: white;
-  font-size: larger;
-  box-shadow: 0px 5px 20px 7px #000;
-  margin-bottom: 40px;
-}
-.contact-form__map {
-  display: inline-block;
-  padding: 1rem;
-  border-radius: 3%;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-}
-.contact-form__label, .contact-form__input, .contact-form__textarea {
-  padding: 10px;
-  border-radius: 5px;
-  outline: none;
-  width: 95%;
-  margin-bottom: 20px;
-}
-
-@media only screen and (max-width: 768px) {
-  .contact-form__section .contact-form__container {
-    flex-direction: column;
-    width: auto;
-  }
-  .contact-form__map {
-    width: auto;
-  }
-}
 .footer {
   display: flex;
   flex-direction: column;
@@ -436,12 +397,13 @@ body {
   transform: translateY(-3%);
 }
 
-@media screen and (min-width: 650px) {
-  .footer {
-    flex-direction: row;
-  }
+/* @media screen and(min-width: 649px) {
+    .footer {
+        flex-direction: row;
+    }
 }
-@media screen and (max-width: 649px) {
+ */
+@media screen and (max-width: 650px) {
   .footer {
     display: flex;
     align-items: center;
@@ -520,6 +482,26 @@ body {
   color: #fff;
 }
 
+.alert-dialog {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 2rem 3rem;
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility linear 0.5s, opacity 0.5s linear;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.alert-dialog.show {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* =====================================Fin del formulario============================== */
 @media only screen and (min-width: 768px) {
   /* para desktop */
@@ -583,4 +565,170 @@ body {
   .section-cards__header {
     display: flex;
   }
+}
+/* =============================== Contact ========================================= */
+.contact-form__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 1rem;
+  color: #c21531;
+}
+
+.contact-form__section .contact-form__container {
+  width: auto;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 103px;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-form__container {
+  width: 1000px;
+  background-image: url(/Assets/African-titulo.png);
+  padding: 30px;
+  margin-top: 20px;
+  color: white;
+  font-size: larger;
+  box-shadow: 0px 5px 20px 7px #000;
+  margin-bottom: 40px;
+}
+.contact-form__map {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 3%;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.contact-form__label, .contact-form__input, .contact-form__textarea {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-form__section .contact-form__container {
+    flex-direction: column;
+    width: auto;
+  }
+  .contact-form__map {
+    width: auto;
+  }
+}
+/* ======================================================== */
+.about-us__container-title {
+  background-image: url(/Assets/African-titulo.png);
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.about-us__section {
+  width: 100%;
+  padding: 10px;
+  background-image: url(/Assets/African-titulo.png);
+}
+
+.about-us__text-welcome {
+  font-size: 1.65rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-us__text-description {
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+}
+
+.about-us__p {
+  color: rgb(77, 51, 51);
+}
+
+.about-us__des {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.about-us__row {
+  width: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+.about-us--card {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 3%;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.25);
+  width: 330px;
+  transition: all 400ms ease-out;
+  cursor: default;
+  overflow: hidden;
+}
+.about-us--card .about-us--card__description {
+  color: azure;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-us--card .about-us__h5 {
+  color: white;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.about-us--card .about-us__card--title {
+  color: aliceblue;
+  padding: 10px;
+}
+.about-us--card .about-us--card__header {
+  text-align: center;
+}
+.about-us--card .about-us--card__header .about-us--card__image {
+  width: 200px !important;
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-us--card .about-us--card__header .about-us--card__body {
+  padding: 20px;
+}
+.about-us--card .about-us--card__header .about-us--card__title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  border-bottom: 2px solid orangered;
+  text-align: center;
+}
+.about-us--card .about-us--card__header .about-us--card__description {
+  padding: 1rem 0;
+  line-height: 1.25;
+}
+.about-us--card .about-us--card__header .about-us--card__footer {
+  text-align: center;
+  padding: 10px;
+}
+.about-us--card .about-us--card__header .about-us--card__btn-container {
+  display: inline-block;
+  align-items: flex-end;
+}
+.about-us--card .about-us--card__header .about-us--card__btn {
+  text-decoration: none;
+  display: inline-block;
+  color: red;
+}
+
+body {
+  font-family: Helvetica, "Roboto", Arial, sans-serif;
+  background-image: url(/Assets/background-title-alt.png);
+}
+
+::-webkit-placeholder {
+  color: lightgray;
 }/*# sourceMappingURL=main.css.map */
