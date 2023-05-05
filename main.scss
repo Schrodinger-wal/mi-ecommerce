@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @import "scss/base/reset";
 
@@ -6,3 +7,24 @@
 @import "scss/base/typography";
 
 @import "scss/layout/header"
+=======
+@import "scss/abstracts/variables";
+@import "scss/abstracts/utilities";
+
+@import "scss/base/reset";
+
+@import "scss/components/card";
+@import "scss/components/alert-dialog";
+
+@import "scss/layout/header";
+@import "scss/layout/footer";
+
+@import "scss/pages/register";
+@import "scss/pages/home";
+@import "scss/pages/contact";
+@import "scss/pages/about-us";
+
+@import "scss/base/typography";
+
+
+>>>>>>> about-us
