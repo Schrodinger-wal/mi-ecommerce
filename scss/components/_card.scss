@@ -34,11 +34,11 @@
     &__header {
         height: 300px;
         width: 200px;
-        transition: all 400ms ease-out    ;
+        -o-transition: all 400ms ease-out;
         -webkit-transition: all 400ms ease-out;
         -moz-transition: all 400ms ease-out;
         -ms-transition: all 400ms ease-out;
-        -o-transition: all 400ms ease-out;
+        transition: all 400ms ease-out    ;
 }
     &__img {
         width: 200px !important;
