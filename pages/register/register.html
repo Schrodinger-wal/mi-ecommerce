@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de usuario</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+=======
+<<<<<<< HEAD
+    <link rel="stylesheet" href="/scss/pages/_register.scss">
+
+>>>>>>> dev
 </head>
 
 <body class="body__formulary">
@@ -96,9 +102,116 @@
                             <label class="label-formulary" for="bornDateInput">Fecha Nacimiento</label><br>
                             <input class= "input-formulary "type="date" name="bornDate" id="bornDateInput">
                         </div>
+<<<<<<< HEAD
                         <div class="div-input__section">
                             <label class="label-formulary" for="country">Pais de Nacimiento</label><br>
                             <select class="lista-paises" name="country" id="country" required>
+=======
+                        <div>
+                            <label for="country">Pais de Nacimiento</label><br>
+                            <select name="country" id="country" required>
+=======
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body__formulary">
+
+    <header class="header__index">
+        <nav class="navbar">
+                <a  href="/index.html" class="navbar__nav-link" >
+                    <img class="navbar__logo" src="/Assets/bushido.png" alt="Logo bushido" >
+                </a>
+                <h1 class="header__h1-title">BUSHIDO</h1>
+
+                <div class="user-navbar">
+                    <button class="product-search__btn">
+                        <div class="buscar">
+                            <input type="text" placeholder="Buscar" required />
+                            <div class="navbar-btn">
+                            <i class="fas fa-search icon"></i>
+                    </button>
+                    <div class="user-navbar__cart-icon-container">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <a href="/pages/login/login.html">
+                    <div class="user-navbar__user-avatar-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png" class="user-navbar__user-avatar" alt="Imagen de usuario">
+                    </div>
+                    </a>
+                    
+            <!-- TODO: avatar de la persona logueada o nombre -->
+                </div>
+
+                
+                <input type="checkbox" class="navbar__menu-btn" id="menu-btn" title="Menu">
+                <label for="menu-btn"  class="navbar__menu-label">
+                    <span class="navbar__menu-icon"></span>
+                </label>
+                
+
+
+
+                <ul class="navbar__nav-links-container">
+                    <li class="navbar__nav-item">
+                        <a href="/index.html" class="navbar__nav-link">Inicio</a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="/pages/contact/contact.html" class="navbar__nav-link">Contacto</a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Nosotros</a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a href="/pages/register/register.html" class="navbar__nav-link">Registrarse</a>
+                    </li>
+                    <li class="navbar__nav-item" id="navbar__sign-in">
+                        <a href="/pages/register/register.html" class="navbar__nav-link">Login</a>
+                    </li>
+                </ul>
+
+        </nav>
+    </header>
+        <!-- ============================= Termina Navbar ================================= -->
+
+
+<!-- =================================Inicio del formulario ============================= -->
+
+<h2 class="register__subtitle--h2">SE PARTE DE ESTE EJERCITO</h2>
+
+                <section class="section__formulary">
+                    <form class="form__register">
+                        <!-- ingresos de datos -->
+                        <div class="div-input__section">
+                            <label class="label-formulary" for="idInputName">Nombre Completo</label><br>
+                            <input class= "input-formulary "type="text" name="fullName" id="idInputName" required minlength="8" maxlength="40" size="50" autofocus autocomplete="on" placeholder="John Doe">
+                        </div>
+                    
+                        <div class="div-input__section">
+                            <label class="label-formulary" for="emailInput">E-mail</label> <br>
+                            <input class= "input-formulary "type="email" class="email-field" name="email" id="emailInput" placeholder="example@email.com" required minlength="8" maxlength="45" pattern="[a-z0-      9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        </div>
+                        <div class="div-input__section">
+                            <label class="label-formulary" for="passwordInput">Contraseña</label><br>
+                            <input class= "input-formulary "type="text" pattern=""^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required placeholder="**********" type="password">
+                        </div>
+                        <div class="div-input__section">
+                            <label class="label-formulary" for="passwordInput">Repetir Contraseña</label> <br>
+                            <input class= "input-formulary "type="text" pattern=""^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required placeholder="**********" type="password">
+                        </div>
+                        <div class="div-input__section">
+                            <label class="label-formulary" for="ageInput">Edad</label> <br>
+                            <input class= "input-formulary "type="number" name="age" id="ageInput" required min="12" max="130" step="5" placeholder="19">
+                        </div>
+                        <div class="div-input__section">
+                            <label class="label-formulary" for="bornDateInput">Fecha Nacimiento</label><br>
+                            <input class= "input-formulary "type="date" name="bornDate" id="bornDateInput">
+                        </div>
+                        <div class="div-input__section">
+                            <label class="label-formulary" for="country">Pais de Nacimiento</label><br>
+                            <select class="lista-paises" name="country" id="country" required>
+>>>>>>> about-us
+>>>>>>> dev
                                 <option value="--">--</option>
                                 <option value="AF">Afghanistan</option>
                                 <option value="AX">Åland Islands</option>
@@ -353,7 +466,12 @@
                     
                         </div>
                     
+<<<<<<< HEAD
                             <label class="label-formulary" class="formulary-container__genre" for="">Sexo</label>
+=======
+<<<<<<< HEAD
+                            <label class="formulary-container__genre" for="">Sexo</label>
+>>>>>>> dev
                             
                             <div class="formulary__genre-div">
                             <input class= "input-formulary "type="radio" name="genre" value="female"> Mujer 
@@ -367,6 +485,22 @@
                                 <label class="label-formulary" class="formulary-conditions__label" for="terminos">
                                 Acepto los terminos y condiciones
                                 </label>
+=======
+                            <label class="label-formulary" class="formulary-container__genre" for="">Sexo</label>
+                            
+                            <div class="formulary__genre-div">
+                            <input class= "input-formulary "type="radio" name="genre" value="female"> Mujer 
+                            <input class= "input-formulary "type="radio" name="genre" value="male"> Hombre 
+                            <input class= "input-formulary "type="radio" name="genre" value="other"> Otro 
+                            </div>
+
+                            <div class="formulary-conditions__container">
+                                <label class="label-formulary" class="formulary-conditions__label" for="terminos">
+                                    Acepto los términos y condiciones
+                                </label>
+                                <br>
+                                <input class="input-formulary" type="checkbox" name="checkbox" id="terminos" class="formulary-conditions__input" required>
+>>>>>>> about-us
                             </div>
 
 
@@ -377,9 +511,23 @@
 
 <!-- ==============================================Fin del formulario========================================================== -->
 
+<<<<<<< HEAD
 <div class="whatsapp-container">
     <a href="https://walink.co/b415d4" class="whatsapp-container__link">
         <i style="color: #c21531;" class="fa-brands fa-whatsapp"></i>
+=======
+<<<<<<< HEAD
+            <footer>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </footer>
+=======
+<!-- ========================== Inicio Footer =============================== -->
+
+<div class="whatsapp-container">
+    <a href="https://walink.co/798a19" class="whatsapp-container__link">
+        <i class="fa-brands fa-whatsapp"></i>
+        
+>>>>>>> dev
     </a>
 </div>
 
@@ -387,13 +535,21 @@
 <div class="footer__column-media">
     <ul class="footer__contact-container">
         <li class="footer__contact-item"> 
+<<<<<<< HEAD
             <a href="https://www.facebook.com/" class="footer__contact-link">
+=======
+            <a href="www.facebook.com/" class="footer__contact-link">
+>>>>>>> dev
                 <i class="fa-brands fa-facebook footer__contact-icon--facebook"></i>
             Facebook
             </a>
         </li>
         <li class="footer__contact-item">
+<<<<<<< HEAD
             <a href="https://www.instagram.com/vvw.b/" class="footer__contact-link">
+=======
+            <a href="https://walink.co/01f881" class="footer__contact-link">
+>>>>>>> dev
                 <i class="fa-brands fa-instagram footer__contact-icon--instagram"></i>
             Instagram
             </a>
@@ -408,8 +564,13 @@
 </div>
 <div class="footer__column-bushido">
     <!-- <img src="/Assets/bushido.png" alt="Company Logo" class="footer__logo" width="50" style=""> -->
+<<<<<<< HEAD
     <h2 style="text-align: center;" class="footer__company-name">BUSHIDO</h2>
     <p style="text-align: center;" class="footer__copyrigth">Todos los derechos reservados a Bushido®</p>
+=======
+    <h2 class="footer__company-name">BUSHIDO</h2>
+    <p class="footer__copyrigth">Todos los derechos reservados a Bushido®</p>
+>>>>>>> dev
 </div>
 <div class="footer__column">
     <ul class="footer__contact-container">
@@ -428,13 +589,24 @@
         <li class="footer__contact-item">
             <a href="#" class="footer__contact-link">
                 <i class="fa-solid fa-envelope footer__contact-icon"></i>
+<<<<<<< HEAD
                 <p style="font-size: small;" >Waltermayer@outlook.es</p>
+=======
+                <p class="footer__contact-mail"" >Waltermayer@outlook.es</p>
+>>>>>>> dev
             </a>
         </li>
     </ul>
 </div>
 </footer>
 
+<<<<<<< HEAD
+=======
+<!-- ========================== Final Footer =============================== -->
+
+<script src="/js/register.js"></script>
+>>>>>>> about-us
+>>>>>>> dev
 </body>
 </html>
 

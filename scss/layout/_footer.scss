@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+/* !!! */
+=======
+>>>>>>> dev
 .footer {
     display: flex;
     flex-direction: column;
@@ -24,6 +30,16 @@
         
 
     }
+<<<<<<< HEAD
+=======
+    &__company-name {
+        text-align: center;
+    }
+
+    &footer__copyrigth {
+        text-align: center
+    }
+>>>>>>> dev
 
     &__contact-link {
         color: white;
@@ -64,12 +80,20 @@
     }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dev
 .footer__contact-link:hover{
     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
     transform: translateY(-3%);
     }
 
+<<<<<<< HEAD
 @media screen and(min-width: 650px) {
+=======
+@media screen and (min-width: 650px) {
+>>>>>>> dev
     .footer {
         flex-direction: row;
     }
@@ -80,4 +104,10 @@
         display: flex;
         align-items: center;
 }
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> about-us
+>>>>>>> dev

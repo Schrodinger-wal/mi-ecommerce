@@ -1,0 +1,21 @@
+.alert-dialog {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background-color: rebeccapurple;
+    padding: 2rem;
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+    transition: display 0.5s ease-in-out;
+    -webkit-transition: display 0.5s ease-in-out;
+    -moz-transition: display 0.5s ease-in-out;
+    -ms-transition: display 0.5s ease-in-out;
+    -o-transition: display 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgba(0.0.1.1)
+}

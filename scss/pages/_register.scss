@@ -1,5 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Roboto&display=swap');
 
+<<<<<<< HEAD
+.body__register {
+=======
+<<<<<<< HEAD
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+>>>>>>> dev
+    font-size: 16px;
+    background: rgb(10,16,37);
+    background-image: url(/Assets/background-title.png);
+font-family: Helvetica, "Roboto", Arial, sans-serif;
+    font-size: 1rem;
+}
+
+
+<<<<<<< HEAD
+=======
+header {
+    background-color:black;
+    width: auto;
+    color: #fff;
+    padding: 5px ;
+    border-bottom: 0.2px white solid ;
+}
+
+.header__image{
+    width: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+=======
 .body__register {
     font-size: 16px;
     background: rgb(10,16,37);
@@ -9,44 +46,110 @@ font-family: Helvetica, "Roboto", Arial, sans-serif;
 }
 
 
+>>>>>>> about-us
+>>>>>>> dev
 /* =====================================Inicio del formulario============================== */
 
 
 
+<<<<<<< HEAD
 .title__formulary{
+=======
+<<<<<<< HEAD
+.title{
+=======
+.title__formulary{
+>>>>>>> about-us
+>>>>>>> dev
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 25px;
+<<<<<<< HEAD
     border-bottom: $color-bg-secondary 1px thick;
+=======
+<<<<<<< HEAD
+    border-bottom: green 1px solid;
+=======
+    border-bottom: $color-bg-secondary 1px thick;
+>>>>>>> about-us
+>>>>>>> dev
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
 }
 
+<<<<<<< HEAD
 .section__formulary {
+=======
+<<<<<<< HEAD
+.section {
+=======
+.section__formulary {
+>>>>>>> about-us
+>>>>>>> dev
     display: flex;
     justify-content: center;
 }
 
+<<<<<<< HEAD
 .form__register {
+=======
+<<<<<<< HEAD
+.form-register {
+=======
+.form__register {
+>>>>>>> about-us
+>>>>>>> dev
     width: 350px;
     background: #222222;
     padding: 30px;
     margin-top: 20px;
     color: white;
     box-shadow: 0px 5px 20px 7px #000;
+<<<<<<< HEAD
     margin-bottom: 40px;
 }
 
 .div-input__section {
+=======
+<<<<<<< HEAD
+}
+
+div {
+=======
+    margin-bottom: 40px;
+}
+
+.div-input__section {
+>>>>>>> about-us
+>>>>>>> dev
     width: auto;
     padding: 15px 0px;
     margin: auto;
     color: white;
 }
 
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+.input-formulary, .lista-paises {
+=======
+input, textarea, select {
+=======
+.label-formulary {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.register__subtitle--h2 {
+    color: #c21531; 
+    text-align: center;
+    margin-top: 4px;
+}
 
 .input-formulary, .lista-paises {
+>>>>>>> about-us
+>>>>>>> dev
 	padding: 10px;
 	border: 1px solid rgb(6, 6, 6);
 	border-radius: 5px;
@@ -55,32 +158,98 @@ font-family: Helvetica, "Roboto", Arial, sans-serif;
 } 
 
 ::-webkit-input-placeholder {
+<<<<<<< HEAD
 	color: lightgray;	
+=======
+<<<<<<< HEAD
+	color: rgb(15, 29, 158);	
+=======
+	color: rgb(136, 136, 136);	
+>>>>>>> about-us
+>>>>>>> dev
 }
 
 .formulary__genre-div {
     width: 300px;
     margin-left: 0px;
+<<<<<<< HEAD
+=======
+    margin-bottom: 15px;
+>>>>>>> about-us
     display:flex;
 }
 
 
 .formulary-conditions__input {
     width: 10%;
+<<<<<<< HEAD
     margin-top: 15px;
 }
 
 .btn{
+<<<<<<< HEAD
     background-color: $color-bg-secondary;
+=======
+    background-color: rgb(32, 32, 143);
+=======
+}
+
+.btn{
+    background-color: $color-bg-secondary;
+>>>>>>> about-us
+>>>>>>> dev
     padding: 10px;
     border: none;
     margin: 20px 15px 20px 10px;
     border-radius: 6px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+>>>>>>> dev
     color: #fff;
 }
 
 /* =====================================Fin del formulario============================== */
 
+<<<<<<< HEAD
+=======
+footer {
+    background-color: black;
+    color: white;
+    width: auto;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+=======
+    color: #fff;
+}
+
+.alert-dialog {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-bg-primary;
+    padding: 2rem 3rem;
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition:  visibility linear 0.5s, opacity 0.5s linear;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* =====================================Fin del formulario============================== */
+
+>>>>>>> about-us
+>>>>>>> dev
 
 @media only screen and (min-width: 768px) {
     /* para desktop */

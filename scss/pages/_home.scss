@@ -10,12 +10,22 @@
     margin-bottom: 20px;
     background-image: url(/Assets/African-titulo.png);
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+<<<<<<< HEAD
     border-radius: 20px ;
     -webkit-border-radius: 20px ;
     -moz-border-radius: 20px ;
     -ms-border-radius: 20px ;
     -o-border-radius: 20px ;
     color: $color-bg-primary;
+=======
+    -o-border-radius: 20px ;
+    -webkit-border-radius: 20px ;
+    -moz-border-radius: 20px ;
+    -ms-border-radius: 20px ;
+    border-radius: 20px ;
+    color: $color-bg-primary;
+        transition: all 4s ease-in-out;
+>>>>>>> dev
 }
     &__header {
         text-align: center;
@@ -33,15 +43,28 @@
 }
 
 .section-cards__header:hover {
+<<<<<<< HEAD
     filter: blur(2px);
     transition: all 1s ease-out;
     -webkit-filter: blur(2px);
+=======
+    -webkit-filter: blur(2px);
+    transition: all 4s ease-in-out;
+    filter: drop-shadow(4px);
+>>>>>>> dev
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
     -ms-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
 }
 
+<<<<<<< HEAD
+=======
+.section-cards__header:hover {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+>>>>>>> dev
 
 @media screen and (min-width: 1200px) {
 

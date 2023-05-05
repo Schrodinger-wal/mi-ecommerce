@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Roboto&display=swap");
+>>>>>>> about-us
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Roboto&display=swap");
 *,
@@ -13,28 +17,210 @@ a {
   display: inline-block;
 }
 
+<<<<<<< HEAD
 body {
+<<<<<<< HEAD
   font-family: Helvetica, "Roboto", Arial, sans-serif;
   background-image: url(/Assets/background-title-alt.png);
 }
 
 ::-webkit-placeholder {
   color: lightgray;
+=======
+  font-family: "Inter", Arial, sans-serif;
+=======
+/* =========================================CARDS================================================================ */
+.section-cards .cards-container {
+  width: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 30px;
+  /*     display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.card__header:hover {
+  filter: grayscale(80%);
+}
+
+.card {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 3%;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  width: 330px;
+  transition: all 400ms ease-out;
+  cursor: default;
+  overflow: hidden;
+}
+.card__header {
+  height: 300px;
+  width: 200px;
+  transition: all 400ms ease-out;
+}
+.card__img {
+  width: 200px !important;
+}
+.card__body {
+  padding: 1rem;
+}
+.card__title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  border-bottom: 2px solid orangered;
+  text-align: center;
+}
+.card__description {
+  padding: 1rem 0;
+  line-height: 1.25;
+}
+.card__price {
+  text-align: center;
+  font-size: large;
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.card__date {
+  /* justify-content: left; */
+}
+.card__date__btn-container {
+  display: inline-block;
+}
+.card__btn {
+  text-decoration: none;
+  display: inline-block;
+  color: red;
+  /*         justify-content: right; */
+}
+@media only screen and (max-width: 600px) {
+  .card .card {
+    height: 550px;
+    width: 300px;
+  }
+  .card .card__header {
+    height: 250px;
+    width: 250px;
+  }
+  .card__img {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 1550px) {
+  .card .card {
+    height: 570px;
+    width: 400px;
+  }
+  .card .card__header {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(56, 49, 37);
+  }
+  .card .card__img {
+    width: 100px;
+  }
+}
+
+/* =========================================FIN CARDS================================================================ */
+.alert-dialog {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  background-color: rebeccapurple;
+  padding: 2rem;
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  transition: display 0.5s ease-in-out;
+  -webkit-transition: display 0.5s ease-in-out;
+  -moz-transition: display 0.5s ease-in-out;
+  -ms-transition: display 0.5s ease-in-out;
+  -o-transition: display 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+>>>>>>> dev
 }
 
 /* ===============================     EMPIEZA HEADER    ========================================== */
 .header__index {
   width: 100%;
+<<<<<<< HEAD
+=======
+>>>>>>> about-us
+>>>>>>> dev
 }
 
 .header {
   position: fixed;
   width: 100%;
+<<<<<<< HEAD
   top: 0;
+=======
+<<<<<<< HEAD
+=======
+  top: 0;
+}
+
+.header__h1-title {
+  margin-right: 30px;
+}
+
+.fa-brands {
+  color: #c21531;
+>>>>>>> about-us
+>>>>>>> dev
 }
 
 .navbar {
   height: 50px;
+<<<<<<< HEAD
+  background-color: #ffffff;
+=======
+<<<<<<< HEAD
+  background-color: #c63637;
+>>>>>>> dev
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+}
+.navbar__logo {
+  height: 45px;
+  margin: 15px 0;
+  vertical-align: middle;
+  max-width: 12vw;
+  max-height: 50px;
+}
+.navbar__menu-label {
+  color: #424242;
+  height: 42px;
+  background-color: none;
+  width: 42px;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__menu-btn {
+<<<<<<< HEAD
+=======
+  left: 1;
+  top: 1;
+=======
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -60,6 +246,7 @@ body {
   justify-content: center;
 }
 .navbar__menu-btn {
+>>>>>>> dev
   position: absolute;
   right: 0;
   top: 0;
@@ -102,6 +289,7 @@ body {
 }
 .navbar .navbar__nav-item:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+<<<<<<< HEAD
   transform: translateY(-1%);
   transition: all 800ms ease-out;
   -webkit-transform: translateY(-1%);
@@ -112,11 +300,52 @@ body {
   -moz-transition: all 800ms ease-out;
   -ms-transition: all 800ms ease-out;
   -o-transition: all 800ms ease-out;
+=======
+  -o-transform: translateY(-1%);
+  -o-transition: all 800ms ease-out;
+  transform: translateY(-1%);
+  transition: all 800ms ease-out;
+>>>>>>> about-us
+>>>>>>> dev
 }
 .navbar__nav-links-container {
   list-style: none;
   position: absolute;
   top: 50px;
+<<<<<<< HEAD
+  background-color: #ffffff;
+=======
+<<<<<<< HEAD
+  background-color: #222;
+  padding: 0.75rem;
+>>>>>>> dev
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.navbar__nav-item {
+  padding: 1.25rem 1rem;
+  transition: all 0.2s ease-out;
+}
+.navbar__nav-item:not(:last-child) {
+  border-bottom: 2px solid rgb(156, 156, 156);
+}
+.navbar__nav-link {
+  color: #424242;
+}
+
+.user-navbar {
+  margin-left: auto;
+  color: white;
+<<<<<<< HEAD
+=======
+=======
   background-color: #ffffff;
   width: 100%;
   height: 0;
@@ -142,6 +371,7 @@ body {
 .user-navbar {
   margin-left: auto;
   color: white;
+>>>>>>> dev
   display: flex;
   gap: 0.5rem;
   align-items: center;
@@ -215,6 +445,7 @@ body {
     display: none;
   }
 }
+<<<<<<< HEAD
 /* =========================================CARDS================================================================ */
 .section-cards .cards-container {
   width: auto;
@@ -373,6 +604,8 @@ body {
     width: auto;
   }
 }
+=======
+>>>>>>> dev
 .footer {
   display: flex;
   flex-direction: column;
@@ -396,6 +629,15 @@ body {
 .footer__contact-item {
   list-style: none;
 }
+<<<<<<< HEAD
+=======
+.footer__company-name {
+  text-align: center;
+}
+.footerfooter__copyrigth {
+  text-align: center;
+}
+>>>>>>> dev
 .footer__contact-link {
   color: white;
   padding: 0.25rem;
@@ -488,6 +730,20 @@ body {
   color: white;
 }
 
+<<<<<<< HEAD
+=======
+.label-formulary {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.register__subtitle--h2 {
+  color: #c21531;
+  text-align: center;
+  margin-top: 4px;
+}
+
+>>>>>>> dev
 .input-formulary, .lista-paises {
   padding: 10px;
   border: 1px solid rgb(6, 6, 6);
@@ -497,18 +753,29 @@ body {
 }
 
 ::-webkit-input-placeholder {
+<<<<<<< HEAD
   color: lightgray;
+=======
+  color: rgb(136, 136, 136);
+>>>>>>> dev
 }
 
 .formulary__genre-div {
   width: 300px;
   margin-left: 0px;
+<<<<<<< HEAD
+=======
+  margin-bottom: 15px;
+>>>>>>> dev
   display: flex;
 }
 
 .formulary-conditions__input {
   width: 10%;
+<<<<<<< HEAD
   margin-top: 15px;
+=======
+>>>>>>> dev
 }
 
 .btn {
@@ -520,6 +787,29 @@ body {
   color: #fff;
 }
 
+<<<<<<< HEAD
+=======
+.alert-dialog {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 2rem 3rem;
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility linear 0.5s, opacity 0.5s linear;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.alert-dialog.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+>>>>>>> dev
 /* =====================================Fin del formulario============================== */
 @media only screen and (min-width: 768px) {
   /* para desktop */
@@ -549,11 +839,16 @@ body {
   background-image: url(/Assets/African-titulo.png);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+<<<<<<< HEAD
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   color: #ffffff;
+=======
+  color: #ffffff;
+  transition: all 4s ease-in-out;
+>>>>>>> dev
 }
 .section-cards__header {
   text-align: center;
@@ -565,15 +860,29 @@ body {
 }
 
 .section-cards__header:hover {
+<<<<<<< HEAD
   filter: blur(2px);
   transition: all 1s ease-out;
   -webkit-filter: blur(2px);
+=======
+  -webkit-filter: blur(2px);
+  transition: all 4s ease-in-out;
+  filter: drop-shadow(4px);
+>>>>>>> dev
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
 }
 
+<<<<<<< HEAD
+=======
+.section-cards__header:hover {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+>>>>>>> dev
 @media screen and (min-width: 1200px) {
   .section-cards__title-container {
     width: 100%;
@@ -583,4 +892,217 @@ body {
   .section-cards__header {
     display: flex;
   }
+<<<<<<< HEAD
+=======
+}
+/* =============================== Contact ========================================= */
+.contact-form__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 1rem;
+  color: #c21531;
+}
+
+.contact-form__section .contact-form__container {
+  width: auto;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 103px;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-form__container {
+  width: 1000px;
+  background-image: url(/Assets/African-titulo.png);
+  padding: 30px;
+  margin-top: 20px;
+  color: white;
+  font-size: larger;
+  box-shadow: 0px 5px 20px 7px #000;
+  margin-bottom: 40px;
+}
+.contact-form__map {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 3%;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.contact-form__label, .contact-form__input, .contact-form__textarea {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-form__section .contact-form__container {
+    flex-direction: column;
+    width: auto;
+  }
+  .contact-form__map {
+    width: auto;
+  }
+}
+/* ======================================================== */
+.about-us__container-title {
+  background-image: url(/Assets/African-titulo.png);
+  margin-bottom: 25px;
+  padding: 15px;
+}
+
+.about-us__section {
+  width: 100%;
+  padding: 10px;
+  background-image: url(/Assets/African-titulo.png);
+}
+
+.about-us__text-welcome {
+  font-size: 1.65rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-us__row {
+  padding: 35px;
+}
+
+.about-us__text-description {
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-us__p {
+  color: rgb(77, 51, 51);
+}
+
+.about-us__des {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.about-us__container-img .about-us__img-p:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-10%);
+}
+
+.about-us__container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us__img-p {
+  width: 70%;
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 400ms ease-out;
+}
+
+.about-us__h5-mail {
+  font-size: 1rem;
+  font-style: italic;
+  color: rgb(138, 158, 175);
+  padding-bottom: 10px;
+}
+
+.about-us--card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.about-us--card:hover {
+  filter: grayscale(80%);
+}
+
+.about-us__row {
+  width: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+.about-us--card {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 1%;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.25);
+  width: 330px;
+  transition: all 400ms ease-out;
+  cursor: default;
+  overflow: hidden;
+}
+.about-us--card .about-us--card:hover {
+  transform: scale(1.5);
+}
+.about-us--card .about-us--card__description {
+  color: azure;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-us--card .about-us__h5 {
+  color: white;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.about-us--card .about-us__card--title {
+  color: aliceblue;
+  padding: 10px;
+}
+.about-us--card .about-us--card__header {
+  text-align: center;
+}
+.about-us--card .about-us--card__image {
+  width: 250px !important;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-us--card .about-us--card__body {
+  padding: 20px;
+}
+.about-us--card .about-us--card__title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.about-us--card .about-us--card__description {
+  padding: 1rem 0;
+  line-height: 1.25;
+}
+.about-us--card .about-us--card__footer {
+  text-align: center;
+  padding: 10px;
+}
+.about-us--card .about-us--card__btn-container {
+  display: inline-block;
+  align-items: flex-end;
+}
+.about-us--card .about-us--card__btn {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-style: oblique;
+}
+
+body {
+  font-family: Helvetica, "Roboto", Arial, sans-serif;
+  background-image: url(/Assets/background-title-alt.png);
+}
+
+::-webkit-placeholder {
+  color: lightgray;
+>>>>>>> about-us
+>>>>>>> dev
 }/*# sourceMappingURL=main.css.map */
