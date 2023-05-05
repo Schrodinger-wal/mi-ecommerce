@@ -1,7 +1,7 @@
 /* ======================================================== */
 .about-us__container-title {
     background-image: url(/Assets/African-titulo.png);
-    margin-bottom: 15px;
+    margin-bottom: 25px ;
     padding: 15px;
 }
 
@@ -32,6 +32,20 @@
     color: $color-bg-primary;
     font-size: 1rem;
 }
+
+.about-us__container-img {
+
+}
+
+.about-us__img-p {
+  width: 100%;
+  height: auto;
+  flex: auto;
+  justify-content: center;
+  flex-direction: column;
+  -ms-flex-align: center;
+}
+
 
 // Card
 

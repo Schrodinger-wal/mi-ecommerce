@@ -621,7 +621,7 @@ a {
 /* ======================================================== */
 .about-us__container-title {
   background-image: url(/Assets/African-titulo.png);
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   padding: 15px;
 }
 
@@ -651,6 +651,15 @@ a {
 .about-us__des {
   color: #ffffff;
   font-size: 1rem;
+}
+
+.about-us__img-p {
+  width: 100%;
+  height: auto;
+  flex: auto;
+  justify-content: center;
+  flex-direction: column;
+  -ms-flex-align: center;
 }
 
 .about-us__row {
