@@ -16,10 +16,10 @@
                     <a  href="/index.html" class="navbar__nav-link" >
                         <img class="navbar__logo" src="/Assets/bushido.png" alt="Logo bushido" >
                     </a>
-                    <h1 style="margin-right: 30px ;">BUSHIDO</h1>
-        
+                    <h1 class="header__h1-title">BUSHIDO</h1>
+    
                     <div class="user-navbar">
-                        <button class="product-search__btn">
+                        <button class="product-search__btn-header">
                             <div class="buscar">
                                 <input type="text" placeholder="Buscar" required />
                                 <div class="navbar-btn">
@@ -28,7 +28,7 @@
                         <div class="user-navbar__cart-icon-container">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </div>
-                        <a href="/pages/register/register.html">
+                        <a href="/pages/login/login.html">
                         <div class="user-navbar__user-avatar-container">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png" class="user-navbar__user-avatar" alt="Imagen de usuario">
                         </div>
@@ -36,16 +36,16 @@
                         
                 <!-- TODO: avatar de la persona logueada o nombre -->
                     </div>
-        
+    
                     
-                    <input type="checkbox" class="navbar__menu-btn" id="menu-btn">
+                    <input type="checkbox" class="navbar__menu-btn" id="menu-btn" title="Menu">
                     <label for="menu-btn"  class="navbar__menu-label">
                         <span class="navbar__menu-icon"></span>
                     </label>
                     
-        
-        
-        
+    
+    
+    
                     <ul class="navbar__nav-links-container">
                         <li class="navbar__nav-item">
                             <a href="/index.html" class="navbar__nav-link">Inicio</a>
@@ -59,8 +59,11 @@
                         <li class="navbar__nav-item">
                             <a href="/pages/register/register.html" class="navbar__nav-link">Registrarse</a>
                         </li>
+                        <li class="navbar__nav-item" id="navbar__sign-in">
+                            <a href="/pages/register/register.html" class="navbar__nav-link">Login</a>
+                        </li>
                     </ul>
-        
+    
             </nav>
         </header>
     
