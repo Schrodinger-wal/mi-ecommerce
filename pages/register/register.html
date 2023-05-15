@@ -74,7 +74,7 @@
 <h2 class="register__subtitle--h2">SE PARTE DE ESTE EJERCITO</h2>
 
                 <section class="section__formulary">
-                    <form class="form__register">
+                    <form class="form__register" id="registerForm">
                         <!-- ingresos de datos -->
                         <div class="div-input__section">
                             <label class="label-formulary" for="idInputName">Nombre Completo</label><br>
@@ -87,19 +87,21 @@
                         </div>
                         <div class="div-input__section">
                             <label class="label-formulary" for="passwordInput">Contraseña</label><br>
-                            <input class= "input-formulary "type="text" pattern=""^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required placeholder="**********" type="password">
+                            <input class= "input-formulary" type="password" type="text" name="password1" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" placeholder="**********"
+                            placeholder="**********" required >
                         </div>
                         <div class="div-input__section">
                             <label class="label-formulary" for="passwordInput">Repetir Contraseña</label> <br>
-                            <input class= "input-formulary "type="text" pattern=""^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required placeholder="**********" type="password">
+                            <input class= "input-formulary" name="password2" type="password" type="text" name pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" placeholder="**********"
+                            placeholder="**********" required >
                         </div>
                         <div class="div-input__section">
                             <label class="label-formulary" for="ageInput">Edad</label> <br>
-                            <input class= "input-formulary "type="number" name="age" id="ageInput" required min="12" max="130" step="5" placeholder="19">
+                            <input class= "input-formulary "type="number" name="age" id="ageInput" required min="16" max="130" placeholder="--">
                         </div>
                         <div class="div-input__section">
                             <label class="label-formulary" for="bornDateInput">Fecha Nacimiento</label><br>
-                            <input class= "input-formulary "type="date" name="bornDate" id="bornDateInput">
+                            <input class= "input-formulary" name="born" type="date" name="bornDate" id="bornDateInput">
                         </div>
                         <div class="div-input__section">
                             <label class="label-formulary" for="country">Pais de Nacimiento</label><br>
@@ -375,7 +377,7 @@
                             </div>
 
 
-                    <button class="btn" type="submit">Enviar</button>
+                    <button id="registerSubmit" class="btn" type="submit">Enviar</button>
                 </form>
                 </section>
             </main>
@@ -445,7 +447,7 @@
 
 <!-- ========================== Final Footer =============================== -->
 
-<script src="/js/register.js"></script>
+<script src="/js/auth/register.js"></script>
 </body>
 </html>
 
