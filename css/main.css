@@ -1,8 +1,16 @@
-<<<<<<< HEAD
-=======
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Roboto&display=swap");
->>>>>>> about-us
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap");
+.container form [class*=-form] {
+  width: 350px;
+  background: #222222;
+  padding: 30px;
+  margin-top: 20px;
+  color: white;
+  box-shadow: 0px 5px 20px 7px #000;
+  margin-bottom: 40px;
+}
+
 *,
 *::before,
 *::after {
@@ -16,10 +24,6 @@ a {
   display: inline-block;
 }
 
-<<<<<<< HEAD
-body {
-  font-family: "Inter", Arial, sans-serif;
-=======
 /* =========================================CARDS================================================================ */
 .section-cards .cards-container {
   width: auto;
@@ -124,37 +128,37 @@ body {
 /* =========================================FIN CARDS================================================================ */
 .alert-dialog {
   position: absolute;
-  bottom: 12px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  background-color: rebeccapurple;
-  padding: 2rem;
+  background-color: #ffffff;
+  padding: 2rem 3rem;
   font-size: 1.25rem;
   color: white;
+  background-color: green;
   text-align: center;
-  transition: display 0.5s ease-in-out;
-  -webkit-transition: display 0.5s ease-in-out;
-  -moz-transition: display 0.5s ease-in-out;
-  -ms-transition: display 0.5s ease-in-out;
-  -o-transition: display 0.5s ease-in-out;
-  box-shadow: 0 0 10px rgb(0, 0, 0);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility linear 0.5s, opacity 0.5s linear;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.alert-dialog.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.alert-dialog.error {
+  background-color: red;
 }
 
 /* ===============================     EMPIEZA HEADER    ========================================== */
 .header__index {
   width: 100%;
->>>>>>> about-us
 }
 
 .header {
   position: fixed;
   width: 100%;
-<<<<<<< HEAD
-=======
   top: 0;
 }
 
@@ -164,26 +168,10 @@ body {
 
 .fa-brands {
   color: #c21531;
->>>>>>> about-us
 }
 
 .navbar {
   height: 50px;
-<<<<<<< HEAD
-  background-color: #c63637;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-}
-.navbar__logo {
-  width: 50px;
-  height: 50px;
-}
-.navbar__menu-btn {
-  left: 1;
-  top: 1;
-=======
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -255,27 +243,11 @@ body {
   -o-transition: all 800ms ease-out;
   transform: translateY(-1%);
   transition: all 800ms ease-out;
->>>>>>> about-us
 }
 .navbar__nav-links-container {
   list-style: none;
   position: absolute;
   top: 50px;
-<<<<<<< HEAD
-  background-color: #222;
-  padding: 0.75rem;
-  width: 100%;
-}
-.navbar__nav-item {
-  padding: 0.75rem 0;
-  border-bottom: 1px solid white;
-}
-.navbar__nav-item:not(:last-child) {
-  border-bottom: 1px solid gray;
-}
-.navbar__nav-link {
-  color: white;
-=======
   background-color: #ffffff;
   width: 100%;
   height: 0;
@@ -869,6 +841,68 @@ body {
   font-style: oblique;
 }
 
+/* Estilos para el contenedor principal */
+.main__login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}
+
+/* Estilos para el contenedor del formulario */
+.container__login {
+  background-color: #fff;
+  padding: 80px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título */
+.title-login {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Estilos para los campos de entrada */
+.input__login {
+  margin-bottom: 20px;
+}
+
+.login-label {
+  display: block;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilos para el botón de ingresar */
+.login__btn {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #8b0000; /* Color principal bordó */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login__btn:hover {
+  background-color: #6a0000; /* Color bordó más oscuro al pasar el cursor */
+}
+
 body {
   font-family: Helvetica, "Roboto", Arial, sans-serif;
   background-image: url(/Assets/background-title-alt.png);
@@ -876,5 +910,4 @@ body {
 
 ::-webkit-placeholder {
   color: lightgray;
->>>>>>> about-us
 }/*# sourceMappingURL=main.css.map */
